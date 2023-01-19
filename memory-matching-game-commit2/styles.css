@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.game {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://cdn.wallpapersafari.com/16/61/jVrMTO.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+h1 {
+    text-align: center;
+    color: #bd42a9;
+    padding: 16px 20px;
+    font-size: 50pt;
+}
+
+.game-area {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+    height: 800px;
+    z-index: 1;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    height: 180px;
+    vertical-align: middle;
+}
+
+.card {
+    padding: 20px;
+    height: 150px;
+    width: 160px;
+    z-index: 1;
+    perspective: 600px;
+}
+
+img.inside-card {
+    transform: translate(-50%, -50%);
+    margin-top: 50%;
+    margin-left: 50%;
+    box-shadow: 0px 12px 12px rgb(46, 46, 46);
+}
+
+.front-card {
+    margin-left: 24px;
+    margin-top: -6px;
+    height: 170px;
+    box-shadow: 0px 12px 12px rgb(46, 46, 46);
+}
+
+
+.back {
+    text-align: center;
+    width: inherit;
+    height: inherit;
+    z-index: 900;
+    transform: rotateX(0deg) rotateY(0deg);
+    transition: all .4s ease-in-out;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+
+
+.card.flip .back {
+    z-index: 900;
+    transform: rotateY(180deg);
+}
+
+.front {
+    display: block;
+    z-index: 800;
+    margin-top: -150px;
+    width: inherit;
+    height: inehrit;
+    box-sizing: border-box;
+    transform: rotateY(-180deg);
+    transition: all .4s ease-in-out;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+.card.flip .front {
+    z-index: 1000;
+    transform: rotateX(0deg) rotateY(0deg);
+}
+
+.won {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    border: 2px gold solid;
+    background-color: white;
+}
+
+.winner h1 {
+    color: rgb(173, 147, 0);
+}
+
+.coloned {
+    display: flex;
+    flex-direction: column;
+}
+
+.rowwed {
+    display: flex;
+    flex-direction: row;
+}
+
+.stars {
+    width: 100px;
+}
+
+.nice {
+    position: absolute;
+    top: 57.5%;
+    left: 64%;
+    z-index: -1;
+}
+
+.nice video{
+    height: 170px;
+    width: auto;
+    border-bottom-right-radius: 15px;
+}
+
+.timer {
+    height: 250px;
+    width: 250px;
+    background-image: url("./images/timer.png");
+    background-position: center;
+    background-size: cover;
+
+}
+
+.numb {
+    text-align: center;
+    transform: translate(-50%, -50%);
+    margin-top: 45%;
+    margin-left: 50%;
+    font-size: 44pt;
+    color: white;
+}
+
+.nameed {
+    text-align: center;
+    transform: translate(-50%, -50%);
+    margin-left: 50%;
+    margin-top: -10%;
+    font-size: 14pt;
+    color: white;
+}
+
+.timer {
+    position: absolute;
+    top: 40%;
+    left: 80%;
+}
+
+.retry {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+    border-radius: 25px;
+    border: 2px red solid;
+    background-color: white;
+}
+
+.tryagain h1 {
+    color: red;
+    padding: 30px;
+}
+
+.untouched {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 53%;
+    width: 800px;
+    border-radius: 40px;
+    height: 800px;
+    z-index: -1;
+    position: absolute;
+}
+
+
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #39c900;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+    width: 200px;
+    height: 70px;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(59, 59, 59);
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background-color: #2da000;
+}
+
+.button:active {
+    background-color: #2da000;
+    box-shadow: 0 5px rgb(29, 29, 29);
+    transform: translateY(4px);
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.overlay {
+    margin-top: 15px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #313030;
+    width: 200px;
+}
+
+.overlay li {
+    text-align: center;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.overlay ul {
+    list-style: none;
+}
+
+.overlay li:hover {
+    background-color: #504d4d;
+}
+
+.newgame {
+    position: absolute;
+    top: 120px;
+    left: 60px;
+}

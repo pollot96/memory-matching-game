@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="game">
+        <div class="header">
+          <h1>Flip or get Flipped</h1>
+        </div>
+        <div class="game-area">
+          <div class="row">
+            <div class="card">
+              <div class="back">
+                <img
+                  class="inside-card"
+                  src="./images/backside.png"
+                  alt=""
+                  onclick="flip(0)"
+                />
+              </div>
+              <div class="front">
+                <img
+                  class="front-card"
+                  src="./images/front1.png"
+                  alt=""
+                  onclick="flip(0)"
+                />
+              </div>
+            </div>
+            <div class="card">
+              <div class="back">
+                <img
+                  class="inside-card"
+                  src="./images/backside.png"
+                  alt=""
+                  onclick="flip(1)"
+                />
+              </div>
+              <div class="front">
+                <img
+                  class="front-card"
+                  src="./images/front1.png"
+                  alt=""
+                  onclick="flip(1)"
+                />
+              </div>
+            </div>
+            <div class="card">
+              <div class="back">
+                <img
+                  class="inside-card"
+                  src="./images/backside.png"
+                  alt=""
+                  onclick="flip(2)"
+                />
+              </div>
+              <div class="front">
+                <img
+                  class="front-card"
+                  src="./images/front1.png"
+                  alt=""
+                  onclick="flip(2)"
+                />
+              </div>
+            </div>
+            <div class="card">
+              <div class="back">
+                <img
+                  class="inside-card"
+                  src="./images/backside.png"
+                  alt=""
+                  onclick="flip(3)"
+                />
+              </div>
+              <div class="front">
+                <img
+                  class="front-card"
+                  src="./images/front1.png"
+                  alt=""
+                  onclick="flip(3)"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="card" id="carded">
+              <div class="back">
+                <img
+                  class="inside-card"
+                  src="./images/backside.png"
+                  alt=""
+                  onclick="flip(4)"
+                />
+              </div>
+              <div class="front">
+                <img
+                  class="front-card"
+                  src="./images/front1.png"
+                  alt=""
+                  onclick="flip(4)"
+                />
+              </div>
+            </div>
+            <div class="card">
+              <div class="back">
+                <img
+                  class="inside-card"
+                  src="./images/backside.png"
+                  alt=""
+                  onclick="flip(5)"
+                />
+              </div>
+              <div class="front">
+                <img
+                  class="front-card"
+                  src="./images/front1.png"
+                  alt=""
+                  onclick="flip(5)"
+                />
+              </div>
+            </div>
+            <div class="card">
+              <div class="back">
+                <img
+                  class="inside-card"
+                  src="./images/backside.png"
+                  alt=""
+                  onclick="flip(6)"
+                />
+              </div>
+              <div class="front">
+                <img
+                  class="front-card"
+                  src="./images/front1.png"
+                  alt=""
+                  onclick="flip(6)"
+                />
+              </div>
+            </div>
+            <div class="card">
+              <div class="back">
+                <img
+                  class="inside-card"
+                  src="./images/backside.png"
+                  alt=""
+                  onclick="flip(7)"
+                />
+              </div>
+              <div class="front">
+                <img
+                  class="front-card"
+                  src="./images/front1.png"
+                  alt=""
+                  onclick="flip(7)"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="card" id="carded">
+              <div class="back">
+                <img
+                  class="inside-card"
+                  src="./images/backside.png"
+                  alt=""
+                  onclick="flip(8)"
+                />
+              </div>
+              <div class="front">
+                <img
+                  class="front-card"
+                  src="./images/front1.png"
+                  alt=""
+                  onclick="flip(8)"
+                />
+              </div>
+            </div>
+            <div class="card">
+              <div class="back">
+                <img
+                  class="inside-card"
+                  src="./images/backside.png"
+                  alt=""
+                  onclick="flip(9)"
+                />
+              </div>
+              <div class="front">
+                <img
+                  class="front-card"
+                  src="./images/front1.png"
+                  alt=""
+                  onclick="flip(9)"
+                />
+              </div>
+            </div>
+            <div class="card">
+              <div class="back">
+                <img
+                  class="inside-card"
+                  src="./images/backside.png"
+                  alt=""
+                  onclick="flip(10)"
+                />
+              </div>
+              <div class="front">
+                <img
+                  class="front-card"
+                  src="./images/front1.png"
+                  alt=""
+                  onclick="flip(10)"
+                />
+              </div>
+            </div>
+            <div class="card">
+              <div class="back">
+                <img
+                  class="inside-card"
+                  src="./images/backside.png"
+                  alt=""
+                  onclick="flip(11)"
+                />
+              </div>
+              <div class="front">
+                <img
+                  class="front-card"
+                  src="./images/front1.png"
+                  alt=""
+                  onclick="flip(11)"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="card" id="carded">
+              <div class="back">
+                <img
+                  class="inside-card"
+                  src="./images/backside.png"
+                  alt=""
+                  onclick="flip(12)"
+                />
+              </div>
+              <div class="front">
+                <img
+                  class="front-card"
+                  src="./images/front1.png"
+                  alt=""
+                  onclick="flip(12)"
+                />
+              </div>
+            </div>
+            <div class="card">
+              <div class="back">
+                <img
+                  class="inside-card"
+                  src="./images/backside.png"
+                  alt=""
+                  onclick="flip(13)"
+                />
+              </div>
+              <div class="front">
+                <img
+                  class="front-card"
+                  src="./images/front1.png"
+                  alt=""
+                  onclick="flip(13)"
+                />
+              </div>
+            </div>
+            <div class="card">
+              <div class="back">
+                <img
+                  class="inside-card"
+                  src="./images/backside.png"
+                  alt=""
+                  onclick="flip(14)"
+                />
+              </div>
+              <div class="front">
+                <img
+                  class="front-card"
+                  src="./images/front1.png"
+                  alt=""
+                  onclick="flip(14)"
+                />
+              </div>
+            </div>
+            <div class="card">
+              <div class="back">
+                <img
+                  class="inside-card"
+                  src="./images/backside.png"
+                  alt=""
+                  onclick="flip(15)"
+                />
+              </div>
+              <div class="front">
+                <img
+                  class="front-card"
+                  src="./images/front1.png"
+                  alt=""
+                  onclick="flip(15)"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="won" id="won">
+        <div>
+          <div class="rowwed">
+            <img
+              class="stars"
+              src="https://img1.picmix.com/output/stamp/normal/1/0/1/7/2107101_89cf6.gif"
+              alt=""
+            />
+            <img
+              class="stars"
+              src="https://img1.picmix.com/output/stamp/normal/1/0/1/7/2107101_89cf6.gif"
+              alt=""
+            />
+            <img
+              class="stars"
+              src="https://img1.picmix.com/output/stamp/normal/1/0/1/7/2107101_89cf6.gif"
+              alt=""
+            />
+            <img
+              class="stars"
+              src="https://img1.picmix.com/output/stamp/normal/1/0/1/7/2107101_89cf6.gif"
+              alt=""
+            />
+            <img
+              class="stars"
+              src="https://img1.picmix.com/output/stamp/normal/1/0/1/7/2107101_89cf6.gif"
+              alt=""
+            />
+            <img
+              class="stars"
+              src="https://img1.picmix.com/output/stamp/normal/1/0/1/7/2107101_89cf6.gif"
+              alt=""
+            />
+            <img
+              class="stars"
+              src="https://img1.picmix.com/output/stamp/normal/1/0/1/7/2107101_89cf6.gif"
+              alt=""
+            />
+            <img
+              class="stars"
+              src="https://img1.picmix.com/output/stamp/normal/1/0/1/7/2107101_89cf6.gif"
+              alt=""
+            />
+          </div>
+          <div class="rowwed">
+            <div class="coloned">
+              <img
+                class="stars"
+                src="https://img1.picmix.com/output/stamp/normal/1/0/1/7/2107101_89cf6.gif"
+                alt=""
+              />
+              <img
+                class="stars"
+                src="https://img1.picmix.com/output/stamp/normal/1/0/1/7/2107101_89cf6.gif"
+                alt=""
+              />
+            </div>
+            <div class="winner">
+              <h1>Congratulation You have Won</h1>
+            </div>
+            <div class="coloned">
+              <img
+                class="stars"
+                src="https://img1.picmix.com/output/stamp/normal/1/0/1/7/2107101_89cf6.gif"
+                alt=""
+              />
+              <img
+                class="stars"
+                src="https://img1.picmix.com/output/stamp/normal/1/0/1/7/2107101_89cf6.gif"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="rowwed">
+            <img
+              class="stars"
+              src="https://img1.picmix.com/output/stamp/normal/1/0/1/7/2107101_89cf6.gif"
+              alt=""
+            />
+            <img
+              class="stars"
+              src="https://img1.picmix.com/output/stamp/normal/1/0/1/7/2107101_89cf6.gif"
+              alt=""
+            />
+            <img
+              class="stars"
+              src="https://img1.picmix.com/output/stamp/normal/1/0/1/7/2107101_89cf6.gif"
+              alt=""
+            />
+            <img
+              class="stars"
+              src="https://img1.picmix.com/output/stamp/normal/1/0/1/7/2107101_89cf6.gif"
+              alt=""
+            />
+            <img
+              class="stars"
+              src="https://img1.picmix.com/output/stamp/normal/1/0/1/7/2107101_89cf6.gif"
+              alt=""
+            />
+            <img
+              class="stars"
+              src="https://img1.picmix.com/output/stamp/normal/1/0/1/7/2107101_89cf6.gif"
+              alt=""
+            />
+            <img
+              class="stars"
+              src="https://img1.picmix.com/output/stamp/normal/1/0/1/7/2107101_89cf6.gif"
+              alt=""
+            />
+            <img
+              class="stars"
+              src="https://img1.picmix.com/output/stamp/normal/1/0/1/7/2107101_89cf6.gif"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <section class="nice" id="nice">
+        <video id="video-nice">
+          <source src="./mp4/nice.mp4" type="video/mp4">
+        </video>
+       
+      </section>
+      <section class="timer">
+        <div class="digit">
+          <h2 class="numb">20</h2>
+          <h5 class="nameed">Turns</h5>
+        </div>
+      </section>
+      <section class="retry" id="retry">
+        <div class="tryagain">
+          <h1>You Lost. Try Again.</h1>
+        </div>
+      </section>
+      <section class="untouched" id="untouched"></section>    
+      <audio id="audio-flip">
+        <source src="./mp3/Card-flip-sound-effect.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="audio-notflip">
+        <source src="./mp3/wrong-answer-126515.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="audio-success">
+        <source src="./mp3/success-sound-effect.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="audio-congrats">
+        <source
+          src="./mp3/Nice Meme  Sound Effect (1) (mp3cut.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+      <audio id="audio-retry">
+        <source src="./mp3/wah-wah-sad-trombone-6347.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="audio-bounce">
+        <source src="./mp3/boing-6222.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="audio-start">
+        <source src="./mp3/game-start-6104.mp3" type="audio/mpeg" />
+      </audio>
+      <div class="newgame">
+        <div class="start">
+          <button
+            class="button"
+            style="vertical-align: middle"
+            onclick="newgame()"
+          >
+            <span>New Game<br /></span>
+          </button>
+        </div>
+        <div class="overlay">
+          <ul>
+            <li class="easy">Easy</li>
+            <li class="medium">Medium</li>
+            <li class="hard">Hard</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
