@@ -4,7 +4,7 @@
 }
 
 .game {
-    height: 100vh;
+    height: 150vh;
     width: 100%;
     position: relative;
     display: flex;
@@ -29,9 +29,6 @@ h1 {
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-
-
-
     border-radius: 40px;
     height: 800px;
     z-index: 1;
@@ -45,13 +42,15 @@ h1 {
     vertical-align: middle;
 }
 
+.hidden-row {
+    display: none;
+}
+
 .card {
     padding: 20px;
-
     height: 150px;
     width: 160px;
     z-index: 1;
-
     perspective: 600px;
 }
 
@@ -71,19 +70,13 @@ img.inside-card {
 
 
 .back {
-
     text-align: center;
-
     width: inherit;
     height: inherit;
     z-index: 900;
-
     transform: rotateX(0deg) rotateY(0deg);
-
     transition: all .4s ease-in-out;
-
     transform-style: preserve-3d;
-
     backface-visibility: hidden;
 }
 
@@ -91,7 +84,6 @@ img.inside-card {
 
 .card.flip .back {
     z-index: 900;
-
     transform: rotateY(180deg);
 }
 
@@ -102,19 +94,14 @@ img.inside-card {
     width: inherit;
     height: inehrit;
     box-sizing: border-box;
-
     transform: rotateY(-180deg);
-
     transition: all .4s ease-in-out;
-
     transform-style: preserve-3d;
-
     backface-visibility: hidden;
 }
 
 .card.flip .front {
     z-index: 1000;
-
     transform: rotateX(0deg) rotateY(0deg);
 }
 
@@ -143,7 +130,6 @@ img.inside-card {
 .rowwed {
     display: flex;
     flex-direction: row;
-
 }
 
 .stars {
@@ -152,14 +138,12 @@ img.inside-card {
 
 .nice {
     position: absolute;
-    top: 55%;
+    top: 54.5%;
     left: 62%;
-
-
     z-index: -1;
 }
 
-.nice img {
+.nice video {
     height: 170px;
     width: auto;
     border-bottom-right-radius: 15px;
@@ -168,7 +152,6 @@ img.inside-card {
 .timer {
     height: 250px;
     width: 250px;
-
     background-image: url("./images/timer.png");
     background-position: center;
     background-size: cover;
@@ -224,7 +207,6 @@ img.inside-card {
     height: 800px;
     z-index: -1;
     position: absolute;
-
 }
 
 
@@ -242,12 +224,10 @@ img.inside-card {
     height: 70px;
     transition: all 0.5s;
     cursor: pointer;
-
     text-decoration: none;
     outline: none;
     border-radius: 15px;
     box-shadow: 0 9px rgb(59, 59, 59);
-
 }
 
 .button span {
@@ -299,7 +279,6 @@ img.inside-card {
     color: white;
     padding-top: 8px;
     padding-bottom: 8px;
-
 }
 
 .overlay ul {
@@ -314,4 +293,95 @@ img.inside-card {
     position: absolute;
     top: 120px;
     left: 60px;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(34, 32, 32);
+    min-height: 400px;
+    width: 300px;
+
+    top: 40%;
+    left: 3%;
+}
+
+.top-arg h2 {
+    color: white;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+}
+
+.to-corner {
+    width: 130px;
+}
+
+.numbbered {
+    width: 40px;
+}
+
+.to-corner h5,
+h4 {
+    color: #acacac;
+    text-align: center;
+}
+
+.lined {
+    display: flex;
+    flex-direction: row;
+}
+
+ol {
+    margin-top: 20px;
+}
+
+li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.pollpo {
+    text-align: center;
+
+}
+
+.other {
+    text-align: center;
+    color: whitesmoke;
+}
+
+
+
+.user-score {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    z-index: 1020;
+    background-color: rgb(34, 32, 32);
+    width: 400px;
+    padding: 30px;
+    padding-top: 0px;
+    display: none;
+}
+
+.user-score h3 {
+    color: white;
+    text-align: center;
+    font-size: 20pt;
+    padding: 18px;
+}
+
+.username {
+    width: 98%;
+    height: 50px;
+    text-align: center;
+    font-size: 18pt;
 }
